@@ -14,7 +14,7 @@ namespace IntelligentPlatform_110kV
         {
             doc = commandData.Application.ActiveUIDocument.Document;
             filterUtils = new FilterUtils(commandData);
-            
+            //
             AllLevels = filterUtils.CollectLevels();
             StructuralLevels = AllLevels.Where(x => x.Name.Contains("结构")).ToList();
         }
